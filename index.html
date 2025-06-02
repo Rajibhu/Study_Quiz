@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-science"></div>
+  <div class="container">
+    <div id="selection">
+      <h2>Select Class & Subject</h2>
+      <select id="classSelect">
+        <option value="">Select Class</option>
+        <option value="11">Class 11</option>
+        <option value="12">Class 12</option>
+      </select>
+      <select id="subjectSelect">
+        <option value="">Select Subject</option>
+        <option value="math">Math</option>
+        <option value="physics">Physics</option>
+        <option value="biology">Biology</option>
+        <option value="chemistry">Chemistry</option>
+      </select>
+      <div id="errorMsg" class="error"></div>
+      <button onclick="playClick(); startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display:none">
+      <div id="timer" class="center-timer">Time: 0s</div>
+      <div class="question-box">
+        <h3 id="questionText"></h3>
+        <div id="options"></div>
+      </div>
+      <button class="skip-btn" onclick="playClick(); skipQuestion()">Skip</button>
+      <button class="submit-btn" onclick="playClick(); submitQuiz()">Submit</button>
+    </div>
+
+    <div id="dashboard" style="display:none" class="dashboard"></div>
+  </div>
+
+  <audio id="clickSound" src="click.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1e1f26;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.background-science {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.08;
+  z-index: 0;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  width: 90%;
+  max-width: 400px;
+  backdrop-filter: blur(5px);
+}
+select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+select {
+  background-color: #2d2f3a;
+  color: #fff;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
+}
+button.skip-btn {
+  background-color: #f9a825;
+}
+button.skip-btn:hover {
+  background-color: #f57f17;
+}
+button.submit-btn {
+  background-color: #1976d2;
+}
+button.submit-btn:hover {
+  background-color: #0d47a1;
+}
+.question-box {
+  margin-top: 20px;
+}
+.option {
+  background: #3a3d4d;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.option.correct { background-color: #388e3c; }
+.option.wrong { background-color: #d32f2f; }
+.dashboard {
+  text-align: center;
+}
+#errorMsg {
+  color: #f44336;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+#timer {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
