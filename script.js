@@ -68,7 +68,7 @@ function startQuiz() {
   }
 
   const key = `${cls}_${sub}`;
-  if (!questions[key]) {
+  if (!questions.hasOwnProperty(key)) {
     errorMsg.innerText = 'No questions available for the selected class and subject.';
     return;
   }
@@ -147,5 +147,10 @@ function submitQuiz() {
     <p>Correct: ${score.right}</p>
     <p>Wrong: ${score.wrong}</p>
     <p>Total Time: ${timeElapsed} seconds</p>
-  `;
+    <button onclick="restartQuiz()" style="margin-top: 20px; padding: 10px 20px; font-size: 16px;">Restart Quiz</button>`;
+}
+
+function restartQuiz() {
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('selection').style.display = 'block';
 }
