@@ -9,7 +9,12 @@ const questions = {
   ],
   "11_chemistry": [
     { q: "Atomic number of Carbon?", options: ["6", "8", "12", "4"], answer: 0 },
-    { q: "Valency of Oxygen?", options: ["2", "4", "6", "1"], answer: 0 }
+    { q: "Valency of Oxygen?", options: ["2", "4", "6", "1"], answer: 0 },
+    { q: "What are the key factors of solid-state reactions?", option: ["Size of the particles", "Mechanical properties of solids", "Thermodynamic and kinetic factors", "Environmental factors"], answer: 3},
+
+{ q: "Which approach can be employed to produce a high degree of homogeneity in the creation of ZnFe2O4 spinel?", option: ["Distillation method", "Vaporization method", "Coprecipitation method", "Crystallization method"], answer: 2},
+
+{ q: "In the zone melting approach, which of the following principles was used?", option: ["Impurities concentrate in the liquid phase than in the gaseous phase", "Impurities concentrate in the solid than in the liquid phase", "Impurities concentrate in the gaseous phase than in the solid phase",  "Impurities concentrate in the liquid phase than in the solid phase"], answer: 3}
   ],
   "11_biology": [
     { q: "Basic unit of life?", options: ["Cell", "Tissue", "Organ", "Organism"], answer: 0 },
