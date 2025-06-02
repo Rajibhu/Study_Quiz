@@ -10,9 +10,9 @@ const questions = {
   "11_chemistry": [
     { q: "Atomic number of Carbon?", options: ["6", "8", "12", "4"], answer: 0 },
     { q: "Valency of Oxygen?", options: ["2", "4", "6", "1"], answer: 0 },
-    { q: "What are the key factors of solid-state reactions?", option: ["Size of the particles", "Mechanical properties of solids", "Thermodynamic and kinetic factors", "Environmental factors"], answer: 3},
-    { q: "Which approach can be employed to produce a high degree of homogeneity in the creation of ZnFe2O4 spinel?", option: ["Distillation method", "Vaporization method", "Coprecipitation method", "Crystallization method"], answer: 2},
-    { q: "In the zone melting approach, which of the following principles was used?", option: ["Impurities concentrate in the liquid phase than in the gaseous phase", "Impurities concentrate in the solid than in the liquid phase", "Impurities concentrate in the gaseous phase than in the solid phase",  "Impurities concentrate in the liquid phase than in the solid phase"], answer: 3}
+    { q: "What are the key factors of solid-state reactions?", options: ["Size of the particles", "Mechanical properties of solids", "Thermodynamic and kinetic factors", "Environmental factors"], answer: 3},
+    { q: "Which approach can be employed to produce a high degree of homogeneity in the creation of ZnFe2O4 spinel?", options: ["Distillation method", "Vaporization method", "Coprecipitation method", "Crystallization method"], answer: 2},
+    { q: "In the zone melting approach, which of the following principles was used?", options: ["Impurities concentrate in the liquid phase than in the gaseous phase", "Impurities concentrate in the solid than in the liquid phase", "Impurities concentrate in the gaseous phase than in the solid phase",  "Impurities concentrate in the liquid phase than in the solid phase"], answer: 3}
   ],
   "11_biology": [
     { q: "Basic unit of life?", options: ["Cell", "Tissue", "Organ", "Organism"], answer: 0 },
@@ -34,8 +34,23 @@ const questions = {
     { q: "DNA stands for?", options: ["Deoxyribonucleic Acid", "Ribonucleic Acid", "Dinucleic Acid", "None"], answer: 0 },
     { q: "Number of chambers in human heart?", options: ["4", "2", "3", "1"], answer: 0 }
   ]
+  // "engineering_eie": [
+  //   { q: "What does EIE stand for?", options: ["Electronics & Instrumentation Engineering", "Electrical and Information Engineering", "Electronic Interface Equipment", "None of the above"], answer: 0 },
+  //   { q: "Main tool used in Instrumentation?", options: ["Transducer", "Resistor", "Motor", "Transformer"], answer: 0 }
+  // ],
+  // "engineering_ee": [
+  //   { q: "SI unit of electric current?", options: ["Ampere", "Volt", "Ohm", "Watt"], answer: 0 },
+  //   { q: "Ohm's law is?", options: ["V=IR", "P=VI", "I=VR", "R=VI"], answer: 0 }
+  // ],
+  // "engineering_ece": [
+  //   { q: "What is modulation?", options: ["Changing signal properties", "Sending signals", "Receiving signals", "Noise control"], answer: 0 },
+  //   { q: "A common semiconductor material?", options: ["Silicon", "Copper", "Gold", "Plastic"], answer: 0 }
+  // ],
+  // "engineering_pt": [
+  //   { q: "PT stands for?", options: ["Printing Technology", "Power Transmission", "Production Technique", "Process Technology"], answer: 0 },
+  //   { q: "A major printing process?", options: ["Offset", "Weaving", "Casting", "Extrusion"], answer: 0 }
+  // ]
 };
-
 
 let currentQuiz = [];
 let currentIndex = 0;
